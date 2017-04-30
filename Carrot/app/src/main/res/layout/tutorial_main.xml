@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        app:srcCompat="@drawable/personflat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="Profile"/>
+
+    <ViewFlipper
+        android:id="@+id/simpleViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Prva"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/drvo" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Vtora"
+                android:textSize="24dp"
+                />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/kapka"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Treta"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/smartcities_o"
+                />
+
+        </LinearLayout>
+    </ViewFlipper>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Start"
+        android:onClick="Start"
+        android:layout_margin="3dp"
+        android:textSize="18dp"
+        android:background="#F06D26"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Map"
+        android:onClick="Map"
+        android:layout_margin="3dp"
+        android:textSize="18dp"
+        android:background="#F06D26"/>
+</RelativeLayout>
